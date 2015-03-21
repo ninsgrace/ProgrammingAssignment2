@@ -18,7 +18,7 @@ makeCacheMatrix <- function(x = matrix()) {
     ##gets the value of the matrix
     get <- function() x
     
-    ##setting the inverse of the matrix using solve function
+    ##setting the inverse of the matrix 
     setinverse <- function(solve) inverse <<- solve
     
     ##getting the inverse of the matrix
@@ -48,7 +48,7 @@ cacheSolve <- function(x, ...) {## Return a matrix that is the inverse of 'x'
   ##if no inverse value yet, get the matrix using the get function "x$get()"
   data <- x$get() 
   
-  ##get the inverse of the matrix return by get function above
+  ##get the inverse of the matrix stored in data using solve function
   inverse <- solve(data, ...)
   
   ##cache the inverse value derived from above
