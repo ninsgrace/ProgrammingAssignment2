@@ -19,14 +19,14 @@ makeCacheMatrix <- function(x = matrix()) {
     get <- function() x
     
     ##setting the inverse of the matrix 
-    setinverse <- function(inv) inverse <<- inv
+    setinverse <- function(inverseMatrix) inverse <<- inverseMatrix
     
     ##getting the inverse of the matrix
     getinverse <- function() inverse
     
     ##list containg above functions so we can use makeCacheMatrix object as
-    ##x <- makeCacheMatrix(sampleMatrix) 
-    ##x$set(newMatrix) --setting new matrix
+    ##x <- makeCacheMatrix() 
+    ##x$set() --setting new matrix
     ##x$get() --to get the matrix
     ##x$setinverse() -- to set the inverse 
     ##x$getinvers() -- to get the inverse
