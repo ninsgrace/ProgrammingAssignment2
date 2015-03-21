@@ -29,7 +29,7 @@ makeCacheMatrix <- function(x = matrix()) {
     ##x$set() --setting new matrix
     ##x$get() --to get the matrix
     ##x$setinverse() -- to set the inverse 
-    ##x$getinvers() -- to get the inverse
+    ##x$getinverse() -- to get the inverse
     list(set = set, get = get,
        setinverse = setinverse,
        getinverse = getinverse) 
